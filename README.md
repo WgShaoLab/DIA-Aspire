@@ -25,8 +25,8 @@ This workflow contains several modules:
 5. Input DIA data by selecting the folder or adding files iteratively
 6. Input the sample-specific library built by `Fragpipe` or `SysteMHC-pipeline`.
 7. Set the absolute path of the output 
-8. Selelct the HLA allele to download the allele-specific libraries from SysteMHC Atlas
-9. Configure the parameters used by DIA-NN
+8. Selelct the HLA allele to download the allele-specific libraries from `SysteMHC Atlas`
+9. Configure the parameters used by `DIA-NN`
 10. Click `Run` to start the analysis. This includes retention time alignment, libraries integration, identification and quantification. And the results will be in the directory you configured before. The name of the results are all start with `lib-base-result`.
 
 # Contact Us
