@@ -10,7 +10,7 @@ This workflow contains several modules:
 
 # Installation
 1. Install [DIA-NN](https://github.com/vdemichev/DiaNN). (currently, we used DIA-NN 1.8.1, but any version is supported).
-2. Install Python as it is used in DIA-Aspire. For this, we recommend to create a **[conda](https://www.anaconda.com/) environment**.
+2. Install **Python** as it is used in DIA-Aspire. For this, we recommend to create a **[conda](https://www.anaconda.com/) environment**.
    - First, run the following cmd: `conda create --name DIA-Aspire-py39 python=3.9`
    - Then, run `conda activate DIA-Aspire-py39` to activate the environment
    - Next, run `pip install numpy, pip install pandas, pip install click, pip install scikit-learn, pip install statsmodels` to install the packags needed
@@ -19,7 +19,7 @@ This workflow contains several modules:
    - by `git clone https://github.com/WgShaoLab/DIA-Aspire` or download the `ZIP` file.
 
 # Usage
-1. Unzip the ile of SysteMHC retention time by `cd DIA-Aspire/src` and `unzip irt_SYSTEMHC.zip`
+1. Unzip the file of SysteMHC retention time by `cd DIA-Aspire/src` and `unzip irt_SYSTEMHC.zip`
 2. Then, move into the DIA-Aspire by `cd ../`
 3. Activate the environment by `conda activate DIA-Aspire-py39` and change the ownership by `chmod 755 -R *`
 4. Run DIA-Aspire by `python3 dia_aspire.py` to get the GUI of DIA-Aspire
