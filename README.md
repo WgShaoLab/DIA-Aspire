@@ -1,5 +1,5 @@
 <p align="center" style="margin-bottom: 0px !important;">
-  <img src="https://github.com/WgShaoLab/DIA-Aspire/master/src/DIA-Aspire_logo.jpg" width="100" height="100">
+  <img src="https://github.com/WgShaoLab/DIA-Aspire/blob/master/src/DIA-Aspire_logo.jpg" width="100" height="100">
 </p>
 <h1 align="center" style="margin-top: -0px; font-size: 20px">DIA-Aspire</h1>
 
