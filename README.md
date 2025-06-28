@@ -23,13 +23,16 @@ This workflow contains several modules:
 2. Then, move into the DIA-Aspire by `cd ../`
 3. Activate the environment by `conda activate DIA-Aspire-py39` and change the ownership by `chmod 755 -R *`
 4. Run DIA-Aspire by `python3 dia_aspire.py` to get the GUI of DIA-Aspire
-5. Configure the DIA-NN path with the real absolute path of DIA-NN in your computer, by default it is `/usr/diann/1.8.1/diann-1.8.1`
+5. Configure the DIA-NN **path** with the real absolute path of DIA-NN in your computer, by default it is `/usr/diann/1.8.1/diann-1.8.1`
 6. Input DIA data by selecting the folder or adding files iteratively
 7. Input the sample-specific library built by **FragPipe** or **SysteMHC-pipeline**.
 8. Set the absolute path of the output 
 9. Selelct the HLA allele to download the allele-specific libraries from **SysteMHC Atlas**
 10. Configure the parameters used by **DIA-NN**
 11. Click `Run` to start the analysis. This includes retention time alignment, libraries integration, identification and quantification. And the results will be in the directory you configured before. The name of the results are all start with `lib-base-result`.
+
+# How to cite
+Huang, X., Gan, Z., Cui, H., Lan, T., Liu, Y., Caron, E., & Shao, W. (2023). The SysteMHC Atlas v2.0, an updated resource for mass spectrometry-based immunopeptidomics. Nucleic acids research.(https://doi.org/10.1093/nar/gkad1068)
 
 # Contact Us
 For issues in using DIA-Aspire, please report to this GitHub repository.
