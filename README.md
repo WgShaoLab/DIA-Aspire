@@ -18,7 +18,7 @@ This workflow contains several modules:
    - by `git clone https://github.com/WgShaoLab/DIA-Aspire` or download the `ZIP` file.
 
 # Usage
-1. Unzip the ile of SysteMHC retention time by `cd DIA-Aspire/src` and 'unzip irt_SYSTEMHC.zip'
+1. Unzip the ile of SysteMHC retention time by `cd DIA-Aspire/src` and `unzip irt_SYSTEMHC.zip`
 2. Then, move into the DIA-Aspire by `cd ../`
 3. Activate the environment by `conda activate DIA-Aspire-py39` and change the ownership by `chmod 755 -R *`
 4. Run DIA-Aspire by `python3 dia_aspire.py` to get the GUI of DIA-Aspire
