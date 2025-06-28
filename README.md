@@ -8,7 +8,7 @@ This workflow contains several modules:
 3. Identification and quantifiaction: DIA-NN is used to analyze the DIA immunopeptidomics data based on the optimized spectral library.
 
 # Installation
-1. Install DIA-NN. (currently, we used DIA-NN 1.8.1, but any version is supported).
+1. Install [DIA-NN](https://github.com/vdemichev/DiaNN). (currently, we used DIA-NN 1.8.1, but any version is supported).
 2. Install Python as it is used in DIA-Aspire. For this, we recommend to create a conda environment.
    - First, run the following cmd: `conda create --name DIA-Aspire-py39 python=3.9`
    - Then, run `conda activate DIA-Aspire-py39` to activate the environment
