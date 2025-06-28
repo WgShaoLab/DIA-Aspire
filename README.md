@@ -18,16 +18,17 @@ This workflow contains several modules:
    - by `git clone https://github.com/WgShaoLab/DIA-Aspire` or download the `ZIP` file.
 
 # Usage
-1. Go into the DIA-Aspire by `cd DIA-Aspire`
-2. Activate the environment by `conda activate DIA-Aspire-py39` and change the ownership by `chmod 755 -R *`
-3. Run DIA-Aspire by `python3 dia_aspire.py` to get the GUI of DIA-Aspire
-4. Configure the DIA-NN path with the real absolute path of DIA-NN in your computer, by default it is `/usr/diann/1.8.1/diann-1.8.1`
-5. Input DIA data by selecting the folder or adding files iteratively
-6. Input the sample-specific library built by `Fragpipe` or `SysteMHC-pipeline`.
-7. Set the absolute path of the output 
-8. Selelct the HLA allele to download the allele-specific libraries from `SysteMHC Atlas`
-9. Configure the parameters used by `DIA-NN`
-10. Click `Run` to start the analysis. This includes retention time alignment, libraries integration, identification and quantification. And the results will be in the directory you configured before. The name of the results are all start with `lib-base-result`.
+1. Unzip the ile of SysteMHC retention time by `cd DIA-Aspire/src` and 'unzip irt_SYSTEMHC.zip'
+2. Then, move into the DIA-Aspire by `cd ../`
+3. Activate the environment by `conda activate DIA-Aspire-py39` and change the ownership by `chmod 755 -R *`
+4. Run DIA-Aspire by `python3 dia_aspire.py` to get the GUI of DIA-Aspire
+5. Configure the DIA-NN path with the real absolute path of DIA-NN in your computer, by default it is `/usr/diann/1.8.1/diann-1.8.1`
+6. Input DIA data by selecting the folder or adding files iteratively
+7. Input the sample-specific library built by `Fragpipe` or `SysteMHC-pipeline`.
+8. Set the absolute path of the output 
+9. Selelct the HLA allele to download the allele-specific libraries from `SysteMHC Atlas`
+10. Configure the parameters used by `DIA-NN`
+11. Click `Run` to start the analysis. This includes retention time alignment, libraries integration, identification and quantification. And the results will be in the directory you configured before. The name of the results are all start with `lib-base-result`.
 
 # Contact Us
 For issues in using DIA-Aspire, please report to this GitHub repository.
