@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DIA-Aspire"
+version = "0.1.0"
+description = "A GUI-based DIA analysis tool for immunopeptidomics"
+readme = "README.md"
+authors = [{name = "Xiaoxiang Huang"}]
+license = {text = "MIT"}
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+requires-python = ">=3.10"
+dependencies = [
+    "peptdeep",
+    "matplotlib",
+    "shap",
+    "PyQt5",
+    "seaborn",
+    "tensorflow",
+    "statsmodels",
+    "pyprophet",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "flake8"]
+
+[project.scripts]
+dia-aspire-gui = "dia_aspire.gui:main"
+
+[tool.setuptools.package-data]
+dia_aspire = ["diann/*.sh"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dia_aspire*"]
+
+

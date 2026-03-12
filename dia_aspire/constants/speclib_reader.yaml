@@ -1,0 +1,21 @@
+spec_lib:
+  reader_type: spec_lib
+  rt_unit: minute
+  fixed_C57: False
+  column_mapping:
+    # sequence is extracted from ModifiedPeptide by _load_modifications
+    "charge": "PrecursorCharge"
+    "precursor_mz": "PrecursorMz"
+    "rt": "NormalizedRetentionTime"
+    # "proteins": "Protein_name"
+    # "uniprot_ids": "uniprot_id"
+    # "decoy": "decoy"
+    "precursor_id": "ions"
+  mod_seq_columns:
+    - "ModifiedPeptide"
+  modification_mapping_type: "maxquant"
+  transition_column_mapping:
+    "mz": "ProductMz"
+    "intensity": "LibraryIntensity"
+    "charge": "FragmentCharge"
+    "type": "FragmentType"

@@ -1,0 +1,36 @@
+diann2: # 2.x
+  reader_type: diann2
+  rt_unit: minute
+  fixed_C57: False
+  column_mapping:
+    "raw_name": "Run"
+    "Stripped.Sequence": "Stripped.Sequence"
+    "charge": "Precursor.Charge"
+    "rt": "RT"
+    "rt_start": "RT.Start"
+    "rt_stop": "RT.Stop"
+    "ccs": "CCS"
+    "mobility": ["IM", "IonMobility"]
+    "Protein.Group": "Protein.Group"
+    "uniprot_ids": "Protein.Ids"
+    "genes": "Genes"
+    "fdr": "Q.Value"
+    "intensity": "PG.MaxLFQ"
+    "precursor_intensity": "Precursor.Normalised"
+    "Precursor.Id": "Precursor.Id"
+    "gene_intensity": "Genes.MaxLFQ"
+    "ms1_profile_corr": "Ms1.Profile.Corr"
+    "evidence": "Evidence"
+    "pep": "PEP"
+    "pg_pep": "PG.PEP"
+    "decoy": "Decoy"
+    # extra columns for performing FDR cutoff
+    "fdr1_search1": "Global.Q.Value" # first search
+    "fdr2_search1": "Global.PG.Q.Value" # first search
+    "fdr3_search1": "Q.Value" # first search
+    "fdr1_search2": "Lib.Q.Value" # second search
+    "fdr2_search2": "Lib.PG.Q.Value" # second search
+
+  mod_seq_columns:
+    - "Modified.Sequence"
+  modification_mapping_type: "maxquant"
