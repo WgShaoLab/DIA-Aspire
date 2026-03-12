@@ -1,9 +1,9 @@
 <p align="center" style="margin-bottom: 0px !important;">
-  <img src="https://github.com/WgShaoLab/DIA-Aspire/blob/master/src/DIA-Aspire_logo.jpg" width="100" height="100">
+  <img src="https://github.com/WgShaoLab/DIA-Aspire/blob/main/dia_aspire/constants/DIA-Aspire_logo.jpg" width="100" height="100">
 </p>
 <h1 align="center" style="margin-top: -0px; font-size: 20px">DIA-Aspire</h1>
 
-This is a computational workflow for identification and quantifiaction of DIA-based immunopeptidome.
+This is a computational workflow with deep learning rescoring for identification and quantifiaction of DIA-based immunopeptidome.
 
 # Overview
 This workflow contains several modules:
@@ -13,27 +13,28 @@ This workflow contains several modules:
 3. **Identification and quantifiaction**: [DIA-NN](https://github.com/vdemichev/DiaNN) is used to analyze the DIA immunopeptidomics data based on the optimized spectral library.
 
 # Installation
-1. Install [DIA-NN](https://github.com/vdemichev/DiaNN). (currently, we used DIA-NN 1.8.1, but any version is supported).
-2. Install **Python** as it is used in DIA-Aspire. For this, we recommend to create a **[conda](https://www.anaconda.com/) environment**.
-   - First, run the following cmd: `conda create --name DIA-Aspire-py39 python=3.9`
-   - Then, run `conda activate DIA-Aspire-py39` to activate the environment
-   - Next, run `pip install numpy, pip install pandas, pip install click, pip install scikit-learn, pip install statsmodels` to install the packags needed
-   - Finally, deactivate the environment by `conda deactivate`
-3. Download DIA-Aspire:
+1. Install [DIA-NN](https://github.com/vdemichev/DiaNN). (currently, we used DIA-NN 2.0, but any version is supported).
+2. Download DIA-Aspire:
    - by `git clone https://github.com/WgShaoLab/DIA-Aspire` or download the `ZIP` file.
+3. Move into DIA-Aspire by `cd /path/to/DIA-Aspire`
+4. Create a **[conda](https://www.anaconda.com/) environment** to install **Python** packages.
+   - First, run the following cmd: `conda create --name dia_aspire python=3.10 -y`
+   - Then, run `conda activate dia_aspire` to activate the environment
+   - Next, run `pip install -e .` to install the packags needed
+   - Finally, run `dia-aspire-gui` to open the GUI
+   deactivate the environment by `conda deactivate`
+
 
 # Usage
-1. Unzip the file of SysteMHC retention time by `cd DIA-Aspire/src` and `unzip irt_SYSTEMHC.zip`
-2. Then, move into the DIA-Aspire by `cd ../`
-3. Activate the environment by `conda activate DIA-Aspire-py39` and change the ownership by `chmod 755 -R *`
-4. Run DIA-Aspire by `python3 dia_aspire.py` to get the GUI of DIA-Aspire
-5. Configure the DIA-NN **path** with the real absolute path of DIA-NN in your computer, by default it is `/usr/diann/1.8.1/diann-1.8.1`
-6. Input DIA data by selecting the folder or adding files iteratively
-7. Input the sample-specific library built by **FragPipe** or **SysteMHC-pipeline**.
-8. Set the absolute path of the output 
-9. Selelct the HLA allele to download the allele-specific libraries from **SysteMHC Atlas**
-10. Configure the parameters used by **DIA-NN**
-11. Click `Run` to start the analysis. This includes retention time alignment, libraries integration, identification and quantification. And the results will be in the directory you configured before. The name of the results are all start with `lib-base-result`.
+1. Open the GUI by `dia-aspire-gui`.
+2. Configure the DIA-NN **path** with the real absolute path of DIA-NN in your computer, by default it is `/data/DIA-NN-2.0-Academia-Linux/diann-2.0/diann-linux`.
+3. Input DIA data by selecting the folder or adding files iteratively.
+4. Set the absolute path of the output.
+5. Input the sample-specific library built by **FragPipe** or **SysteMHC-pipeline** or **MaxQuant**.
+6. Selelct the HLA allele to download the allele-specific libraries from **SysteMHC Atlas**.
+7. Configure the parameters used by **DIA-NN**.
+8. Click to enable rescore and choose the rescore model (DNN or SVM).
+9. Click `Run` to start the analysis. This includes retention time alignment, libraries integration, identification and quantification, rescore. And the results will be in the directory you configured before. The name of the results are all start with `lib-base-result`.
 
 # How to cite
 Huang, X., Gan, Z., Cui, H., Lan, T., Liu, Y., Caron, E., & Shao, W. (2023). The SysteMHC Atlas v2.0, an updated resource for mass spectrometry-based immunopeptidomics. Nucleic acids research.(https://doi.org/10.1093/nar/gkad1068)
