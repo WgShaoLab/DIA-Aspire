@@ -18,11 +18,11 @@ This workflow contains several modules:
    - by `git clone https://github.com/WgShaoLab/DIA-Aspire` or download the `ZIP` file.
 3. Move into DIA-Aspire by `cd /path/to/DIA-Aspire`
 4. Create a **[conda](https://www.anaconda.com/) environment** to install **Python** packages.
-   - First, run the following cmd: `conda create --name dia_aspire python=3.10 -y`
-   - Then, run `conda activate dia_aspire` to activate the environment
-   - Next, run `pip install -e .` to install the packags needed
-   - Finally, run `dia-aspire-gui` to open the GUI
-   deactivate the environment by `conda deactivate`
+   - First, run `conda create --name dia_aspire python=3.10 -y`
+   - Then, run `conda activate dia_aspire` to activate the environment (deactivate the environment by `conda deactivate`).
+   - Next, run `pip install -e .` to install DIA-Aspire.
+   - Finally, run `dia-aspire-gui` to open the GUI of DIA-Aspire.
+   
 
 
 # Usage
